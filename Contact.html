@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="jumbotron text-center">
+    <img src="https://static.thenounproject.com/png/3535152-200.png" class="rounded float-left" alt="Logo">
+    <h1 class="display-4 d-inline">Captivate Interiors</h1>
+  </div>
+  </div>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html"> About</a>
+              <li class="nav-item">
+                 <a class="nav-link" href="Shop.html">Shop</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<body>
+<h2 id="ContactHeader" onclick="myFunction()" class="float-left">Contact Us</h2>
+<script>
+    function myFunction() {
+  document.getElementById("ContactHeader").style.fontSize = "x-small";
+  document.getElementById("ContactHeader").style.color = "blue";
+}
+</script>
+<p>Contact us using the provided contact information for any queries needed, or just use this form below.</p>
+<div id="ContactInfo">
+    <ul>
+        <li>Address: 22 Tui Road, Papatoetoe, Auckland 2025</li>
+        <li>Phone Number: 678-999-8212</li>
+        <li>Email Address: Captivate@Interiors.co.nz</li>
+        <li>Fax: 82197431@CaptivateInteriorsFax.co.nz</li>
+    </ul>
+</div>
+<script>
+    document.getElementById("ContactInfo").onmouseover = function() {mouseOver()};
+    document.getElementById("ContactInfo").onmouseout = function() {mouseOut()};
+    function mouseOver() {
+         document.getElementById("ContactInfo").style.textAlign = "end";
+    function mouseOut() {
+         document.getElementById("ContactInfo").style.textAlign = "start";
+}
+}
+</script>
+<!--Section: Contact v.2-->
+<section class="mb-4">
+    <!--Section description-->
+    <p class="w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row text">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+    </div>
+
+</section>
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <a href="https://www.facebook.com/" class="bi bi-facebook"></a>
+      <a href="https://www.instagram.com/" class="bi bi-instagram"></a>
+      <a href="https://nz.linkedin.com/" class="bi bi-linkedin"></a>
+      <a href="https://twitter.com/" class="bi bi-twitter"></a>
+    </div>
+  </footer>
+</body>
+</html>
